@@ -1,0 +1,103 @@
+.main-sidebar {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 100%;
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 250px;
+     background: #F4F4F4;
+     height: 100%;
+     overflow-y: scroll;
+     z-index: 1022;
+     transition: $transition;
+     -ms-overflow-style: none;  
+     scrollbar-width: none;  
+     &::-webkit-scrollbar {
+          display: none;
+     }
+     &.show {
+          margin-left: 0;
+     }
+     .logo-area {
+          margin-top: 35px;
+          margin-bottom: 25px;
+          margin-left: 25px;
+     }
+     .text-box {
+          width: 100%;
+          left: 0;
+          right: 0;
+          padding: 20px 10px;
+          width: 210px;
+          background: #FFFFFF;
+          border-radius: 10px;
+          margin: 30px auto;
+          p {
+               margin-bottom: 10px;
+               font-size: 16px;
+               font-weight: 400;
+               line-height: 26px;
+               color: #515151;
+          }
+     }
+     .primary-menu {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    list-style: none;
+                    margin-bottom: 10px;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    &.clinic {
+                         a {
+                              background: #FAC52C;
+                              color: var(--white);
+                              &:hover {
+                                   color: var(--white);
+                              }
+                         }
+                    }
+                    &.current-menu-item {
+                         a {
+                              color: var(--primary-color);
+                         }
+                    }
+                    a {
+                         display: flex;
+                         align-items: center;
+                         padding: 5px 25px;
+                         height: 50px;
+                         font-size: 16px;
+                         font-weight: 500;
+                         text-transform: capitalize;
+                         color: #515151;
+                         transition: $transition;
+                         i {
+                              line-height: 1;
+                              margin-right: 10px;
+                         }
+                         &:hover {
+                              color: var(--primary-color);
+                         }
+                    }
+               }
+          }
+     }
+}
+.metismenu .has-arrow:after {
+     transform: rotate( -315deg ) translateY(-50%);
+}
+@media (max-width: 1200px) {
+     .main-sidebar .logo-area {
+          margin-top: 25px;
+     }
+}
+@media (max-width: 1199px) {
+     .main-sidebar  {
+          margin-left: -250px;
+     }
+}

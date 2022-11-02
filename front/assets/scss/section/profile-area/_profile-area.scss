@@ -1,0 +1,143 @@
+.profile-area {
+     .profile-name {
+          font-size: 28px;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #221F1F;
+     }
+     .profile-info {
+          li {
+               display: inline-block;
+               margin-right: 20px;
+               span {
+                    margin-right: 5px;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #515151;
+               }
+               b {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #515151; 
+               }
+               &:last-child {
+                    margin-right: 0;
+               }
+          }
+     }
+     .progress-tabs {
+          .progress-list {
+               display: flex;
+               justify-content: space-evenly;
+               position: relative;
+               z-index: 1;
+               &::after {
+                    position: absolute;
+                    content: '';
+                    width: 75%;
+                    height: 1px;
+                    background: #C4C4C4;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    margin: 0 auto;
+                    top: 9px;
+                    z-index: -1;
+               }
+               .single-progress {
+                    text-align: center;
+                    &.checked {
+                         .check-box {
+                              border: 2px solid #3DD598;
+                              background: #3DD598;
+                              &:after {
+                                   opacity: 1;
+                                   color: #ffffff;
+                              }
+                         } 
+                    }
+                    &.current-tab {
+                         .progress-text {
+                              font-weight: 700;
+                         }
+                    }
+                    .check-box {
+                         display: block;
+                         position: relative;
+                         width: 18px;
+                         height: 18px;
+                         border: 2px solid #B5B5BE;
+                         background: #ffffff;
+                         border-radius: 3px;
+                         margin: 0 auto;
+                         &:after {
+                              position: absolute;
+                              content: "\f00c";
+                              font-family: "Font Awesome 5 free";
+                              font-weight: 900;
+                              width: 100%;
+                              height: 100%;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              font-size: 12px;
+                              opacity: 0;
+                         }
+                    }
+                    .progress-text {
+                         display: block;
+                         margin-top: 10px;
+                         text-align: center;
+                         font-size: 14px;
+                         font-weight: 500;
+                         text-transform: capitalize;
+                         color: #515151;
+                    }
+               }
+          }
+     }
+}
+.profile-image {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+}
+@media (max-width:991px) {
+     .profile-area .profile-name {
+          font-size: 22px;
+     }
+     .profile-area .profile-info li b {
+          font-size: 15px;
+     }
+}
+@media (max-width:767px) {
+     .profile-area .profile-name {
+          font-size: 20px;
+     }
+     .profile-area .profile-info li span {
+          font-size: 13px;
+     }
+     .profile-area .profile-info li b {
+          font-size: 14px;
+          font-weight: 600;
+          color: #515151;
+     }
+     .profile-area .profile-image {
+          width: 60px;
+          height: 60px;
+     }
+     .profile-image.mr-5 {
+          margin-right: 10px !important;
+     }
+     .profile-area .progress-tabs .progress-list .single-progress .progress-text {
+          font-size: 12px;
+     }
+     .progress-tabs {
+          margin-top: 3rem;
+     }
+}
+@media (max-width:480px) {
+     .profile-area .profile-name {
+          font-size: 16px;
+     }
+}

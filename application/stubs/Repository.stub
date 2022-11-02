@@ -1,0 +1,13 @@
+<?php
+
+namespace DummyNamespace;
+
+class DummyRepository
+{
+
+    public function get()
+    {
+        return $model::all();
+    }
+
+}

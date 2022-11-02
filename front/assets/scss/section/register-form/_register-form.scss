@@ -1,0 +1,127 @@
+/*-------------------------
+4.register-area
+--------------------------*/
+.register-area {
+     background: #F4F4F4;
+     @include flex-position(flex, center, center);
+     min-height: 100%;
+     padding: 30px 15px;
+     .register-wrap {
+          display: flex;
+          align-items: center;
+          flex-flow: row wrap;
+          width: 100%;
+          padding: 50px 140px;
+          width: 920px;
+          min-height: 645px;
+          background: #FFFFFF;
+          border-radius: 10px;
+     }
+     
+}
+.register-form {
+     width: 100%;
+     .form-title {
+          font-size: 2.4rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #022741;
+
+     }
+     .form-group {
+          position: relative;
+          margin-bottom: 20px;
+          label {
+               margin-bottom: 1rem;
+               font-family: $bodyFont;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #515151;
+          }
+          .form-control {
+               width: 100%;
+               height: 7rem;
+               border-radius: .6rem;
+               border: 1px solid #EEEEEE;
+               padding: 1rem 2rem;
+               font-family: $bodyFont;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #868686;
+          }
+          .field-icon {
+               position: absolute;
+               right: 2rem;
+               bottom: 2.7rem;
+          }
+     }
+     .form-check {
+          .form-check-input {
+               margin-top: 5px;
+          }
+          .form-check-label {
+               padding-left: 10px;
+               cursor: pointer;
+          }
+     }
+     .forgot-password {
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: #F45A75;
+          transition: $transition;
+          &:hover {
+               color: var(--primary-color);
+          }
+     }
+     .register-btn {
+          display: block;
+          width: 100%;
+          border: none;
+          height: 65px;
+          border-radius: 6px;
+          background: var(--primary-color);
+          font-size: 1.6rem;
+          font-weight: 700;
+          text-transform: capitalize;
+          color: var(--white);
+          transition: $transition;
+          &:hover {
+               color: var(--white);
+               background: var(--hover-color);
+          }
+     }
+}
+@media (max-width: 767px) {
+     .register-area .register-wrap {
+          width: 100%;
+          padding: 50px;
+     }
+}
+@media (max-width: 575px) {
+     .register-area .register-wrap {
+          padding: 30px;
+          min-height: 500px;
+     }
+     .register-form .form-title {
+          font-size: 2rem;
+     }
+     .form-title.text-center.mb-55 {
+          margin-bottom: 25px;
+     }
+     .register-form .form-group label {
+          font-size: 1.4rem;
+     }
+     .register-form .forgot-password {
+          font-size: 1.4rem;
+     }
+     .register-form .form-group .form-control {
+          padding: 1rem;
+          font-size: 1.4rem;
+     }
+}
+@media (max-width: 320px) {
+     .forgot-password.float-right {
+          margin-bottom: 20px;
+          float: left !important;
+     }
+}

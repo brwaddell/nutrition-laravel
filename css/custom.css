@@ -1,0 +1,42 @@
+
+    .dt-buttons.btn-group.flex-wrap {
+        position: absolute;
+        left: 40%;
+        transform: translateX(-40%);
+        z-index: 9;
+
+    }
+
+    div#users-table_wrapper {
+        position: relative;
+    }
+
+    div#users-table_length {
+        display: inline-block;
+    }
+
+    div#users-table_filter {
+        display: inline-block;
+        float: right;
+    }
+
+    a.dt-button.dropdown-item.buttons-columnVisibility.active {
+        color: #333;
+    }
+
+    a.dt-button.dropdown-item.buttons-columnVisibility {
+        color: #ddd;
+    }
+
+    div#users-table_info {
+        display: inline-block;
+    }
+
+    div#users-table_paginate {
+        display: inline-block;
+        float: right;
+    }
+    .btn i {
+        margin: 0
+    }
+

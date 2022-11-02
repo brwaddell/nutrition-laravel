@@ -1,0 +1,50 @@
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media (max-width: 1200px) {
+     .main-section-wrap {
+          margin: 0 0;
+     }
+}
+@media (max-width: 1199px) {
+     .main-content {
+          margin-left: 0;
+     }
+     .body-overlay  {
+          display: block;
+     }
+}
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+
+/*  Small mobile :320px. */
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.section-border-wrap {
+          padding: 25px 15px;
+     }
+}
+@media(max-width:575px) {
+     .patient-top .media {
+          flex-direction: column;
+     }
+     .patient-top .media .primary-btn-lg.btn-rounded{
+          margin: 10px 0;
+     }
+}
+
+
+/* Large Mobile :577px. */
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+	
+}
+

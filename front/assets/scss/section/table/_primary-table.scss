@@ -1,0 +1,209 @@
+/*-------------------------
+8.table
+--------------------------*/
+.primary-table {
+     .table {
+          width: 100%;
+          margin: 0;
+          thead {
+               th {
+                    padding: 24px 15px;
+                    border-top: none;
+                    border-bottom: 1px solid #EEEEEE;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #221F1F;
+                    background: #fafafa;
+                    white-space: nowrap;
+               }
+          }
+          tbody {
+               td {
+                    border-top: none;
+                    border-bottom: 1px solid #EEEEEE;
+                    padding: 15px;
+                    vertical-align: middle;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #515151;
+                    white-space: nowrap;
+                    b {
+                         font-weight: 600;
+                    }
+               }
+          }
+          .status {
+               display: inline-block;
+               padding: 3px 15px;
+               background: #DCFFF9;
+               border-radius: 20px;
+               font-size: 16px;
+               font-weight: 500;
+               text-transform: capitalize;
+               color: #00B997;
+               &.check-in {
+                    background: #DCFFF9;
+                    color: #00B997;
+               }
+               &.processing {
+                    background: #E2F8FF;
+                    color: #00B2FF;
+               }
+               &.checked-out {
+                    background: #FFE5E5;
+                    color: #E52222;
+               }
+          }
+     }
+     .patient-info {
+          img {
+               width: 45px;
+               height: 45px;
+               border-radius: 50%;
+          }
+          h5 {
+               margin: 0;
+               margin-bottom: 5px;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #515151;
+          }
+          span {
+               display: block;
+               margin: 0;
+               font-size: 1.4rem;
+               line-height: 1;
+               font-weight: 400;
+               color: #515151;
+          }
+          
+     }
+     .options-btn {
+          text-align: right;
+          li {
+               display: inline-block;
+               margin-left: 10px;
+               &:first-child {
+                    margin-left: 0;
+               }
+               .dropdown {
+                    position: static;
+                    .edite-btn {
+                         color: #A0A4A8;
+                         font-size: 1.8rem;
+                         transition: $transition;
+                         &:hover {
+                              color: var(--primary-color);
+                         }
+                    }
+                    .dropdown-menu {
+                         padding: 0;
+                         z-index: 999;
+                         width: 260px;
+                         border: 1px solid #EEEEEE;
+                         border-radius: 10px;
+                         left: -40px !important; 
+                         a {
+                              display: block;
+                              padding: 10px 15px;
+                              font-size: 1.5rem;
+                              font-weight: 500;
+                              text-transform: capitalize;
+                              color: #515151;
+                              border-bottom: 1px solid #EEEEEE;
+                              transition: $transition;
+                              &:hover {
+                                   background: #EDFAF8;
+                                   color: #515151;
+                              }
+                              &:last-child {
+                                   border-bottom: none;
+                              }
+                         }
+                    }
+               }
+               .delet-btn {
+                    color: #FF6760;
+                    font-size: 1.8rem;
+                    transition: $transition;
+                    background: transparent;
+                    &:hover {
+                         color: var(--primary-color);
+                    }
+               }
+          }
+     }
+     .table-pagination {
+          .page-count {
+               display: inline-block;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #515151;
+          }
+          .pagination-lsit {
+               margin: 0;
+               padding: 0;
+               li {
+                    display: inline-block;
+                    list-style: none;
+                    a {
+                         display: inline-block;
+                         width: 3rem;
+                         height: 3rem;
+                         line-height: 3rem;
+                         text-align: center;
+                         font-size: 1.6rem;
+                         font-weight: 400;
+                         color: #515151;
+                         transition: $transition;
+                         &:hover {
+                              background: var(--primary-color);
+                              color: var(--white);
+                         }
+                    }
+                    &.active {
+                         a {
+                              background: var(--primary-color);
+                              color: var(--white);
+                         }
+                    }
+               }
+          }
+     }
+}
+@media (max-width: 1200px) {
+     .primary-table .table thead th {
+          padding: 18px 10px;
+          font-size: 1.4rem;
+          font-weight: 500;
+     }
+     .primary-table .table tbody td {
+          padding: 15px 10px;
+          font-size: 1.4rem;
+     }
+     .primary-table .patient-info h5 {
+          font-size: 1.4rem;
+     }
+     .primary-table .patient-info span {
+          font-size: 1.2rem;
+     }
+}
+@media (max-width: 768px) {
+     .primary-table .patient-info img {
+          width: 35px;
+          height: 35px;
+     }
+     .primary-table .table tbody td:first-child {
+          min-width: 140px;
+     }
+     .primary-table .table .status {
+          padding: 3px 15px;
+          font-size: 12px;
+     }
+}
+@media(max-width: 575px) {
+     .primary-table .table-pagination .page-count {
+          margin-bottom: 10px;
+     }
+}

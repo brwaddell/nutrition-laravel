@@ -1,0 +1,45 @@
+/*-------------------------
+9.modal
+--------------------------*/
+.modal {
+     padding-right: 0 !important;
+     .large-model {
+          max-width: 100%;
+     }
+     .modal-content {
+          position: relative;
+          border-radius: 10px;
+          padding: 35px 30px;
+          background: #FFFFFF;
+          border: none;
+          .close {
+               position: absolute;
+               right: 30px;
+               top: 30px;
+               width: 30px;
+               height: 30px;
+               line-height: 30px;
+               text-align: center;
+               border-radius: 50%;
+               background: #E6E6E6;
+               span {
+                    font-size: 20px;
+               }
+          }
+     }
+     .small-model {
+          width: 350px;
+          .primary-form {
+               .form-title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #221F1F;
+               }
+          }
+     }
+}
+@media (max-width: 480px) {
+     .modal .small-model {
+          width: auto;
+     }
+}

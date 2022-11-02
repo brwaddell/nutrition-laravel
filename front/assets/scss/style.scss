@@ -1,0 +1,58 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Nutrition Responsive  HTML5 Template
+Template URI: http://nutrition.com
+Description: Nutrition Responsive  HTML5 Template
+Author: Gobinda Sarkar
+Author URI: http://nutrition.com
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+2.header area
+3.butotn
+4.register-area
+5.main-sidebar
+6.card-icon-box
+7.section-header
+8.table
+9.modal
+10.primary-form
+11.secondary-table
+12.result-area
+
+
+*/
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/button/button";
+@import "section/register-form/register-form";
+@import "section/main-sidebar/main-sidebar";
+@import "section/card-icon-box/card-icon-box";
+@import "section/section-header/section-header";
+@import "section/table/primary-table";
+@import "section/table/secondary-table";
+@import "section/table/primary-table-two";
+@import "section/modal/modal";
+@import "section/primary-form/primary-form";
+@import "section/progressbar/progressbar";
+@import "section/result-area/result-area";
+@import "section/chart-area/chart-area";
+@import "section/info-box/info-box";
+@import "section/profile-area/profile-area";
+@import "section/primary-tabs/primary-tabs";
+@import "section/immunization/immunization";
+@import "section/preloader/preloader";
+
+// page content

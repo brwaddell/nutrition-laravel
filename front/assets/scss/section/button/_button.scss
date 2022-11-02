@@ -1,0 +1,63 @@
+/*-------------------------
+7.butotn
+--------------------------*/
+.primary-btn {
+     display: inline-block;
+     padding: .9rem 2rem;
+     background: var(--primary-color);
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     color: var(--white);
+     border-radius: .6rem;
+     transition: $transition;
+     border: none;
+     &:hover {
+          background: var(--hover-color);
+          color: var(--white);
+     }
+}
+
+.primary-btn-lg {
+     display: inline-block;
+     padding: 1.4rem 3rem;
+     background: var(--primary-color);
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     color: var(--white);
+     transition: $transition;
+     border: none;
+     &.btn-rounded {
+          border-radius: 5rem;
+     }
+     &.min-width-145 {
+          min-width: 145px;
+     }
+     &:hover {
+          background: var(--hover-color);
+          color: var(--white);
+     }
+}
+.delet-btn {
+     background: #FC5353;
+     &:hover {
+          background: var(--hover-color);
+     }
+}
+.secondary-btn {
+     display: inline-block;
+     padding: .9rem 2rem;
+     background: #EEEEEE;
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     color: #515151;
+     border-radius: .6rem;
+     transition: $transition;
+     border: none;
+     &:hover {
+          background: var(--hover-color);
+          color: var(--white);
+     }
+}

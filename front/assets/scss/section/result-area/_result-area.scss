@@ -1,0 +1,69 @@
+.result-area {
+     .single-progress {
+          flex-flow: row wrap;
+          justify-content: space-between;
+          margin-bottom: 3rem;
+          .progress-left {
+               width: calc(100% - 155px);
+               .progress-title {
+                    margin-bottom: 20px;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #515151;
+               }
+          }
+          .progress-right {
+               width: 125px;
+               .score-title {
+                    margin-bottom: 10px;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #515151;
+               }
+               .score-box {
+                    display: inline-block;
+                    margin-right: 15px;
+                    width: 75px;
+                    height: 35px;
+                    line-height: 35px;
+                    border: 1px solid #EEEEEE;
+                    text-align: center;
+                    background: #FAFAFA;
+                    border-radius: .6rem;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #221F1F;
+               }
+               img {
+                    width: 35px;
+                    height: 35px;
+               }
+          }
+     }
+}
+@media (max-width: 991px) {
+     .result-area .single-progress .progress-left .progress-title {
+          font-size: 1.4rem;
+     }
+     .result-area .single-progress .progress-right .score-box {
+          width: 50px;
+          font-size: 14px;
+     }
+     .result-area .single-progress .progress-left {
+          width: calc(100% - 135px);
+     }
+     .result-area .single-progress .progress-right {
+          width: 100px;
+     }
+}
+@media (max-width: 375px) {
+     .result-area .single-progress .progress-left {
+          width: calc(100% - 110px);
+     }
+     .result-area .single-progress .progress-right .score-box {
+          margin-right: 10px;
+     }
+     .result-area .single-progress .progress-right .score-box {
+          width: 55px;
+     }
+}

@@ -1,0 +1,211 @@
+.primary-form {
+     .form-title {
+          font-size: 2.8rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #221F1F;
+     }
+     .form-inner-title {
+          margin-bottom: 25px;
+          font-size: 2.2rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #221F1F;
+     }
+     .label-text {
+          margin-bottom: 20px;
+          font-size: 1.6rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: #515151;
+     }
+     .user-image {
+          #uplode-img {
+               width: 120px;
+               height: 120px;
+               border-radius: 50%;
+          }
+          .custom-fileuplode {
+               margin-top: 30px;
+          }
+          #fileuplode {
+               display: none;
+          }
+     }
+     .form-group {
+          position: relative;
+          margin-bottom: 2.5rem;
+          label {
+               margin-bottom: .8rem;
+               font-size: 1.6rem;
+               font-weight: 400;
+               text-transform: capitalize;
+               color: #515151;
+          }
+          .form-control {
+               width: 100%;
+               height: 6rem;
+               border: 1px solid #EEEEEE;
+               background: #FAFAFA;
+               border-radius: .6rem;
+               padding: 1rem 2rem;
+               font-family: $bodyFont;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #868686;
+          }
+          .nice-select {
+               width: 100%;
+               height: 6rem;
+               border: 1px solid #EEEEEE;
+               background: #FAFAFA;
+               border-radius: .6rem;
+               padding: 1rem 2rem;
+               font-family: $bodyFont;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #868686;
+               .list {
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 20px rgba(176, 176, 176, 0.25);
+                    border-radius: 10px;
+                    border: none;
+                    li {
+                        color: #221F1F;
+                        &:hover {
+                            background: #EDFAF8;
+                            color: #221F1F;
+                        }
+                    }
+               }
+          }
+          .message-box {
+               height: 120px;
+          }
+          .big-message-box {
+               height: 196px;
+          }
+          .form-right-option {
+               position: absolute;
+               right: 20px;
+               bottom: 17px;
+               padding: 0;
+               border: none;
+               background: transparent;           
+          }
+          .search-list {
+               position: absolute;
+               width: 100%;
+               left: 0;
+               top: 100%;
+               padding: 2rem;
+               background: var(--white);
+               box-shadow: 0 15px 30px rgba(0, 0, 0, .05);
+               border-radius: .5rem;
+               z-index: 9;
+               li {
+                    display: block;
+                    list-style: none;
+                    margin-bottom: .6rem;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    a {
+                         display: block;
+                         font-size: 1.6rem;
+                         font-weight: 400;
+                         color: #515151;
+                         transition: $transition;
+                         &:hover {
+                              color: var(--primary-color);
+                         }
+                    }
+               }
+          }
+     }
+     .form-check {
+          margin-right: 15px;
+          &:last-child {
+               margin-right: 0;
+          }
+          .form-check-input {
+               margin-top: 2px;
+               width: 20px;
+               height: 20px;
+               border: 1px solid #EEEEEE;
+               background: #FAFAFA;
+          }
+          .form-check-label {
+               margin: 0;
+               padding-left: 1.5rem;
+               font-size: 1.6rem;
+               font-weight: 400;
+               text-transform: capitalize;
+               color: #221F1F;
+               cursor: pointer;
+          }
+     }
+     .radiio-group-list {
+          flex-flow: row wrap;
+          .form-check-inline {
+               .form-check-input {
+                    width: 20px;
+                    height: 20px;
+               }
+               .form-check-label {
+                    padding-left: 10px;
+               }
+          }
+     }
+     .checkbox-lsit {
+          flex-flow: row wrap;
+     }
+}
+@media (max-width: 767px) {
+     .primary-form .form-title {
+          font-size: 2rem;
+     }
+     .form-title.mb-25 {
+          margin-bottom: 15px;
+     }
+     .primary-form .form-group .form-control {
+          padding: 1rem;
+          font-size: 1.4rem;
+     }
+     .primary-form .form-check .form-check-label {
+          padding-left: 1rem;
+          font-size: 1.4rem;
+     }
+     .primary-form .form-group label {
+          font-size: 1.4rem;
+     }
+     .primary-form .form-check .form-check-input {
+          margin-top: 4px;
+     }
+     .primary-form .form-check .form-check-input[type="radio"] {
+          margin-top: 0;
+     }
+     .primary-form .label-text {
+          font-size: 1.4rem;
+     }
+     .radiio-group-list.d-flex.align-items-center.mt-50 {
+          margin-top: 0;
+          margin-bottom: 25px;
+     }
+     .primary-form .radiio-group-list .form-check-inline .form-check-label {
+          padding-left: 0;
+     }
+     .primary-form .form-check .form-check-input {
+          width: 15px;
+          height: 15px;
+     }
+     .primary-form .form-inner-title {
+          margin-bottom: 15px;
+          font-size: 1.8rem;
+     }
+}
+@media (max-width: 320px) {
+     .primary-form .form-check {
+          margin-right: 10px;
+     }
+}

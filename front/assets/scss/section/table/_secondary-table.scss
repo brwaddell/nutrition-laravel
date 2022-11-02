@@ -1,0 +1,60 @@
+/*-------------------------
+11.secondary-table
+--------------------------*/
+.secondary-table {
+     .table {
+          width: 100%;
+          margin: 0;
+          thead {
+               th {
+                    padding: 20px;
+                    border-top: none;
+                    border-bottom: 1px solid #EEEEEE;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #221F1F;
+                    background: #F5F5F5;
+                    border-right: 1px solid #FFFFFF;
+                    white-space: nowrap;
+                    &:first-child {
+                         border-left: 1px solid #F5F5F5;
+                    }
+                    &:last-child {
+                         border-right: 1px solid #F5F5F5;
+                    }
+               }
+          }
+          tbody {
+               td {
+                    border-top: none;
+                    border-bottom: 1px solid #EEEEEE;
+                    border-right: 1px solid #EEEEEE;
+                    padding: 20px;
+                    vertical-align: middle;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #221F1F;
+                    white-space: nowrap;
+                    &:first-child {
+                         border-left: 1px solid #EEEEEE;
+                    }
+                    .id-number {
+                         margin-left: 5px;
+                    }
+                    a {
+                         color: #221F1F;
+                    }
+               }
+          }
+     }
+}
+@media (max-width: 1200px) {
+     .secondary-table .table thead th {
+          font-size: 1.4rem;
+          font-weight: 500;
+     }
+     .secondary-table .table tbody td {
+          font-size: 1.4rem;
+     }
+}
